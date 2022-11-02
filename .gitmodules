@@ -4,3 +4,9 @@
 [submodule "lib/challenges"]
 	path = lib/challenges
 	url = https://github.com/Proof-Of-Hack-Protocol/challenges
+[submodule "lib/openzeppelin"]
+	path = lib/openzeppelin
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "lib/solmate"]
+	path = lib/solmate
+	url = https://github.com/transmissions11/solmate
