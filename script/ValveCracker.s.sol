@@ -8,7 +8,7 @@ contract ValveCrackerScript is Script {
   function run() external {
     Valve valve = Valve(vm.envAddress("VALVE_ADDRESS"));
 
-    vm.broadcast(vm.envAddress("WALLET_ADDRESS"));
+    vm.broadcast(vm.envAddress("ETH_FROM"));
     new ValveCracker(valve);
 
     assert(valve.open());

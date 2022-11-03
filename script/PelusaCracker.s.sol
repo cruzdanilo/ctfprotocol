@@ -8,7 +8,7 @@ contract PelusaCrackerScript is Script {
   function run() external {
     Pelusa pelusa = Pelusa(vm.envAddress("PELUSA_ADDRESS"));
 
-    vm.broadcast(vm.envAddress("WALLET_ADDRESS"));
+    vm.broadcast(vm.envAddress("ETH_FROM"));
     new PelusaCracker(pelusa, vm.envAddress("PELUSA_DEPLOYER"), vm.envUint("PELUSA_BLOCK"));
 
     assert(pelusa.goals() == 2);
