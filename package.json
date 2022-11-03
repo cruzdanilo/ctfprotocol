@@ -1,8 +1,8 @@
 {
   "scripts": {
     "lint": "run-s --continue-on-error lint:**",
-    "lint:solhint": "solhint '**/*.sol'",
-    "lint:slither": "slither src --solc-remaps \"$(xargs < remappings.txt)\"",
+    "lint:solhint": "solhint '{src,test,script}/**/*.sol'",
+    "lint:slither": "slither .",
     "test": "forge test"
   },
   "devDependencies": {
