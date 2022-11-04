@@ -2,7 +2,7 @@
 pragma solidity 0.8.17;
 
 import { Test } from "forge-std/Test.sol";
-import { GoldenTicketCracker, GoldenTicket } from "../src/GoldenTicketCracker.sol";
+import { GoldenTicketCracker, GoldenTicket } from "../../src/eko/GoldenTicketCracker.sol";
 
 contract GoldenTicketCrackerTest is Test {
   GoldenTicket internal goldenTicket;

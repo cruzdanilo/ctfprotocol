@@ -2,7 +2,7 @@
 pragma solidity 0.8.17;
 
 import { Test } from "forge-std/Test.sol";
-import { MetaverseSupermarketCracker, InflaStore } from "../src/MetaverseSupermarketCracker.sol";
+import { MetaverseSupermarketCracker, InflaStore } from "../../src/eko/MetaverseSupermarketCracker.sol";
 
 contract MetaverseSupermarketCrackerTest is Test {
   InflaStore internal store;

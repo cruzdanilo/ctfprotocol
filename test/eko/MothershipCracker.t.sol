@@ -2,7 +2,7 @@
 pragma solidity 0.8.17;
 
 import { Test } from "forge-std/Test.sol";
-import { MothershipCracker, Mothership } from "../src/MothershipCracker.sol";
+import { MothershipCracker, Mothership } from "../../src/eko/MothershipCracker.sol";
 
 contract MothershipCrackerTest is Test {
   Mothership internal mothership;

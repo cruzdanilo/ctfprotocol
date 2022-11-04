@@ -7,7 +7,7 @@ import { Stonks } from "eko/ChallengeStonks.sol";
 
 contract StonksCrackerScript is Script {
   function run() external {
-    Stonks stonks = Stonks(vm.envAddress("STONKS_ADDRESS"));
+    Stonks stonks = Stonks(vm.envAddress("EKO_STONKS_ADDRESS"));
     address wallet = vm.envAddress("WALLET_ADDRESS");
     uint256 price = stonks.ORACLE_TSLA_GME();
     uint256 tsla = stonks.TSLA();

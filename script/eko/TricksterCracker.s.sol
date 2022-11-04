@@ -4,12 +4,12 @@ pragma solidity 0.8.17;
 import { Script } from "forge-std/Script.sol";
 import { JackpotProxy } from "eko/ChallengeTrickster.sol";
 import { StdStorage, stdStorage } from "forge-std/StdStorage.sol";
-import { TricksterCracker, Jackpot } from "../src/TricksterCracker.sol";
+import { TricksterCracker, Jackpot } from "../../src/eko/TricksterCracker.sol";
 
 contract TricksterCrackerScript is Script {
   function run() external {
     Jackpot jackpot = Jackpot(
-      payable(address(uint160(uint256(vm.load(vm.envAddress("JACKPOT_ADDRESS"), bytes32(uint256(1)))))))
+      payable(address(uint160(uint256(vm.load(vm.envAddress("EKO_JACKPOT_ADDRESS"), bytes32(uint256(1)))))))
     );
 
     vm.broadcast(vm.envAddress("ETH_FROM"));

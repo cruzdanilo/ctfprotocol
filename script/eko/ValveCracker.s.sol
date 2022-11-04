@@ -2,11 +2,11 @@
 pragma solidity 0.8.17;
 
 import { Script } from "forge-std/Script.sol";
-import { ValveCracker, Valve } from "../src/ValveCracker.sol";
+import { ValveCracker, Valve } from "../../src/eko/ValveCracker.sol";
 
 contract ValveCrackerScript is Script {
   function run() external {
-    Valve valve = Valve(vm.envAddress("VALVE_ADDRESS"));
+    Valve valve = Valve(vm.envAddress("EKO_VALVE_ADDRESS"));
 
     vm.broadcast(vm.envAddress("ETH_FROM"));
     new ValveCracker(valve);

@@ -2,11 +2,11 @@
 pragma solidity 0.8.17;
 
 import { Script } from "forge-std/Script.sol";
-import { HiddenKittyCracker, House } from "../src/HiddenKittyCracker.sol";
+import { HiddenKittyCracker, House } from "../../src/eko/HiddenKittyCracker.sol";
 
 contract HiddenKittyCrackerScript is Script {
   function run() external {
-    House house = House(vm.envAddress("HOUSE_ADDRESS"));
+    House house = House(vm.envAddress("EKO_HOUSE_ADDRESS"));
 
     vm.broadcast(vm.envAddress("ETH_FROM"));
     new HiddenKittyCracker(house);

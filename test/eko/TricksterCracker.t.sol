@@ -4,7 +4,7 @@ pragma solidity 0.8.17;
 import { Test } from "forge-std/Test.sol";
 import { JackpotProxy } from "eko/ChallengeTrickster.sol";
 import { StdStorage, stdStorage } from "forge-std/StdStorage.sol";
-import { TricksterCracker, Jackpot } from "../src/TricksterCracker.sol";
+import { TricksterCracker, Jackpot } from "../../src/eko/TricksterCracker.sol";
 
 contract TricksterCrackerTest is Test {
   using stdStorage for StdStorage;

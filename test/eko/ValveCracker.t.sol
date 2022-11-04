@@ -2,7 +2,7 @@
 pragma solidity 0.8.17;
 
 import { Test } from "forge-std/Test.sol";
-import { ValveCracker, Valve } from "../src/ValveCracker.sol";
+import { ValveCracker, Valve } from "../../src/eko/ValveCracker.sol";
 
 contract ValveCrackerTest is Test {
   Valve internal valve;

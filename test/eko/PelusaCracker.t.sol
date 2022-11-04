@@ -2,7 +2,7 @@
 pragma solidity 0.8.17;
 
 import { Test } from "forge-std/Test.sol";
-import { PelusaCracker, Pelusa } from "../src/PelusaCracker.sol";
+import { PelusaCracker, Pelusa } from "../../src/eko/PelusaCracker.sol";
 
 contract PelusaCrackerTest is Test {
   Pelusa internal pelusa;
